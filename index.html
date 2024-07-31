@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- title -->
+    <title>Lucas - Portfolio</title>
+    <!-- favicon -->
+
+    <!-- vide -->
+
+    <link href="css/vendor/fontawesome/all.min.css" rel="stylesheet"> <!-- favicone library -->
+    <!-- metatag -->
+    <meta name="author" content="Lucas LIONNET" />
+    <meta property="og:title" content="Lucas - Portfolio" />
+    <meta property="og:url" content="https://bubblesloth.github.io" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Lucas - Portfolio" />
+    <meta property="og:site_name" content="Lucas - Portfolio" />
+    <meta id="tw_url" name="twitter:url" content="">
+    <!-- main style -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet">
 </head>
+
 <body>
-    <H1>Github.io TEST</H1>
-    <p>That's a test</p>
+    <div class="backgroundSection"></div>
+    <!-- header -->
+    <header id="headermain">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-2">
+                    <!-- navigation icon  -->
+                    <div class="navicon d-block d-lg-none">
+                        <div class="navicon__bar"></div>
+                    </div>
+                    <!-- end navigation icon  -->
+                </div>
+                <div class="col-lg-10 text-xl-left d-none d-lg-block justify-content-lg-left justify-content-xl-left">
+                    <!-- navigation desktop -->
+                    <nav class="navpage text-left">
+                        <ul class="navpage__wrap">
+                            <li class="navpage__list"><a href="#sectionhero" class="activelink">Intro</a></li>
+                            <li class="navpage__list"><a href="#aboutsection">About Me</a></li>
+                            <li class="navpage__list"><a href="#Projectssection">Projects</a></li>
+                            <li class="navpage__list"><a href="#contactsection">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- end navigation desktop -->
+                </div>
+            </div>
+        </div>
+        <!-- Asset de limitation à insérer-->
+    </header>
+    <!-- end header -->
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader__img">
+            <h1>LOADING..</h1>
+        </div>
+        <div class="preloadBG"></div>
+    </div>
+    <!-- mobile nav -->
+    <div class="overlay">
+        <div class="overlay__navigation">
+            <ul class="overlay__listnav">
+                <li class="navpage__list"><a href="#herosection">Intro</a></li>
+                <li><a href="#Projectssection">Projects</a></li>
+                <li><a href="#aboutsection">About Me</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- script -->
+    <script src="./javascript/main.js"></script>
 </body>
 </html>
