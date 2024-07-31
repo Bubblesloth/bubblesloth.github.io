@@ -266,12 +266,12 @@ textarea {
     position: absolute;
     width: 25px;
     height: 2px;
-    background: #080808;
+    background: #525252;
 }
 
 .navicon:hover .navicon__bar:before,
 .navicon:hover .navicon__bar:after {
-    background: #080808;
+    background: #525252;
 }
 
 .navicon__bar:before {
