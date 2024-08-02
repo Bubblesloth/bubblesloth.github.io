@@ -68,7 +68,7 @@ body {
 }
 
 main{
-    background-image: url("../asset/portfolio/SVG/gridWhite.png");
+    background-image: url("../asset/SVG/backgroundgrid.png");
     background-size: 4.5%;
 }
 
@@ -195,7 +195,7 @@ textarea {
     width: 100%;
     z-index: 3;
     top: 0;;
-    background-color: #080808;
+    background-color: #221822;
 }
 
 /*
@@ -229,12 +229,12 @@ textarea {
 .navpage__wrap li a:hover {
     text-decoration: none;
     color: #080808;
-    background: #f2f2f2;
+    background: #ffcff1;
 }
 
 .navpage__wrap li a.activelink {
     color: #080808;
-    background: #f2f2f2;
+    background: #ffcff1;
     text-decoration: underline;
 }
 
@@ -266,12 +266,12 @@ textarea {
     position: absolute;
     width: 25px;
     height: 2px;
-    background: #525252;
+    background: #ffffff;
 }
 
 .navicon:hover .navicon__bar:before,
 .navicon:hover .navicon__bar:after {
-    background: #525252;
+    background: #ffffff;
 }
 
 .navicon__bar:before {
@@ -355,7 +355,7 @@ textarea {
     padding: 5px 20px;
     color: #080808;
     display: inline-block;
-    background: #f2f2f2;
+    background: #ffffff;
     text-align: center;
     font-weight: 550;
 }
@@ -629,10 +629,25 @@ textarea {
     width: 99%;
     height: 100%;
     position: absolute;
-    opacity: 0.03;
+    opacity: 0.3;
     margin-top: -50px;;
     z-index: -2;
 }
+
+img.background{
+    position: absolute;
+    left: 0px;
+    top: -142px;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+
+  }
+  
+  html, body{
+      width: 100%;
+      height: 100%;
+  }
 
 .preloadBG{
     position: fixed;
@@ -659,6 +674,7 @@ textarea {
 }
 
 .video-container{
+    background-color: #f2f2f2;
     width: 100vw;
     height:100%;
   }
@@ -669,7 +685,7 @@ textarea {
     left: 50%;
     width: 100vw;
     height: 100%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -75%);
     border: 0;
   }
 
@@ -684,10 +700,15 @@ textarea {
       overflow: hidden;
     }
 }
-@media (max-aspect-ratio: 16/9){ /* Responsive */
+@media (max-aspect-ratio: 16/9) {
     .video-container iframe {
-        height: 56.25vw;
-        overflow: hidden;
+      width: 177.78vh;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
     }
 }
 
@@ -698,3 +719,55 @@ textarea {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+.barHeader{
+    transform: translateY(50%);
+    filter: invert(1);
+}
+
+img,
+iframe{
+    max-width: 100%;
+}
+
+.imageicon{
+    height: 50px;
+}
+
+/*
+#aboutsection{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#aboutsection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../asset/SVG/grid.jpg");
+    opacity: 0.03;
+    background-size: 20%;
+    z-index: -1;
+}
+
+#aboutsection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    opacity: 1;
+    z-index: -2;
+}
+*/
+
+.pinkTransition{
+    z-index: 5;
+}

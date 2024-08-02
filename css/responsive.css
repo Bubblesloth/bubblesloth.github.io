@@ -98,6 +98,14 @@ Filename      : responsive.css
         visibility: hidden;
     }
 
+    .barHeader{
+        visibility: hidden;
+    }
+
+    .topbarHeader{
+        visibility: hidden;
+    }
+
     #rowFirstSection{
         background-color: rgba(0, 0, 0, 0.943);
         background-image: none;
