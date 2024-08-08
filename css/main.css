@@ -679,13 +679,14 @@ img.background{
     height:100%;
   }
 
+
   iframe {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100vw;
     height: 100%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -60%);
     border: 0;
   }
 
@@ -694,17 +695,23 @@ img.background{
     pointer-events: none;
   }
 
+  .video-bottom iframe{
+    transform: translate(-50%, -60%);
+    z-index: -2;
+  }
+
 @media (min-aspect-ratio: 16/9) { /* Responsive */
     .video-container iframe {
       height: 56.25vw;
       overflow: hidden;
     }
 }
+
 @media (max-aspect-ratio: 16/9) {
     .video-container iframe {
       width: 177.78vh;
     }
-  }
+}
 
 @media only screen and (max-width: 700px) {
     .modal-content {
@@ -731,7 +738,7 @@ iframe{
 }
 
 .imageicon{
-    height: 50px;
+    height: 55px;
 }
 
 /*
@@ -771,3 +778,15 @@ iframe{
 .pinkTransition{
     z-index: 5;
 }
+
+.counterwrap__counternum-txt { /*test logo logiciels*/
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Reset */
+*:before,
+*:after {
+    content: '';
+}
+
