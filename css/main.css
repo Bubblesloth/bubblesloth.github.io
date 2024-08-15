@@ -144,7 +144,7 @@ textarea {
     border-radius: 3px;
     margin: 10px 5px;
     padding: 3px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .dot:focus {
@@ -244,7 +244,7 @@ textarea {
     top: 10px;
     width: 50px;
     height: 50px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     z-index: 22;
     border-radius: 25px;
 }
@@ -491,7 +491,7 @@ textarea {
 
 .porfoliowarp__item {
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.487));
-    cursor: pointer;
+    /*cursor: pointer;*/
     margin: 0;
     position: relative;
     float: right;
@@ -545,7 +545,7 @@ textarea {
     list-style: none;
     margin: 0 5px;
     padding: 5px 20px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     border: 1px solid #080808;
 }
 
@@ -741,6 +741,20 @@ iframe{
     height: 55px;
 }
 
+
+.imageiconlittle {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.iconListDisplay{
+    display: inline;
+}
+
+.aboutlinkLogo{
+    margin-right: 13px;
+}
+
 /*
 #aboutsection{
     height: 300px;
@@ -777,16 +791,57 @@ iframe{
 
 .pinkTransition{
     z-index: 5;
+    padding-top: 20px;
 }
 
-.counterwrap__counternum-txt { /*test logo logiciels*/
+.counterwrap__counternum-txt{ /*test logo logiciels*/
     font-size: 20px;
     font-weight: 700;
 }
 
 /* Reset */
 *:before,
-*:after {
+*:after{
     content: '';
 }
 
+#projectTxt{
+    font-size: 30px;
+    margin-bottom: -30px;
+}
+
+.paragraph{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.gameCoverImage{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gameCoverImage:hover{
+    transform: scale(1.1);
+}
+
+.linkbtn{
+    transition: transform 0.3s ease;
+}
+
+.linkbtn:hover{
+    transform: scale(1.1);
+}
+
+/*---------- CURSEUR -----------*/
+
+body {
+    cursor: url('../asset/cursor/wii-pointer-ccw.cur') 0 0, auto;
+  }
+
+a, button, input[type="submit"], input[type="button"]{
+    cursor: url('../asset/cursor/wii-open-ccw.cur') 0 0, pointer !important;
+  }
+
+body.click-active {
+    cursor: url('../asset/cursor/wii-grab-ccw.cur') 0 0, auto;
+}

@@ -214,6 +214,73 @@ const freemaninit = (function() {
     return {
         AppInit: AppInit
     };
+
 }());
+
+//CLIQUE DE SOURIS PERSO :
+
+document.addEventListener('mousedown', function(event) {
+    // Ajouter la classe lorsque le bouton de la souris est enfoncé
+    document.body.classList.add('click-active');
+});
+
+document.addEventListener('mouseup', function(event) {
+    // Retirer la classe lorsque le bouton de la souris est relâché
+    document.body.classList.remove('click-active');
+}); 
+
+
+/////////////////////////
+///// SOUND MANAGER /////
+/////////////////////////
+
+
+//headerscrollSound
+
+var headerscrollSound = document.getElementById('headerscrollSound');
+
+var navLinks = document.querySelectorAll('.navpage__wrap a');
+
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        headerscrollSound.play();
+    });
+});
+
+
+//SELECT SOUND
+
+var selectSound = document.getElementById('selectSound');
+
+var selectSoundClass = document.querySelectorAll('.clickableItem');
+
+selectSoundClass.forEach(function(link) {
+    link.addEventListener('mouseenter', function() {
+        selectSound.play();
+    });
+});
+
+
+//Click Sound
+
+document.addEventListener('mousedown', function(event) {
+    if (event.button === 0) {
+        
+        var clickSound = document.getElementById('clickSound');
+        var newClickSound = clickSound.cloneNode();
+
+        newClickSound.play();
+
+        newClickSound.onended = function() {
+            newClickSound.remove();
+        };
+    }
+});
+
+
+/////////////////////////////
+///// END SOUND MANAGER /////
+/////////////////////////////
+
 //initilizing app
 freemaninit.AppInit();
