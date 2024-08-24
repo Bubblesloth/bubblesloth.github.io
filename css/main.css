@@ -739,12 +739,14 @@ iframe{
 
 .imageicon{
     height: 55px;
+    user-select: none;
 }
 
 
 .imageiconlittle {
     height: 30px;
     margin-right: 5px;
+    user-select: none;
 }
 
 .iconListDisplay{
@@ -831,7 +833,6 @@ iframe{
 .linkbtn:hover{
     transform: scale(1.1);
 }
-
 /*---------- CURSEUR -----------*/
 
 body {
