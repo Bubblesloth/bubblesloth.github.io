@@ -19,6 +19,7 @@
     <meta property="og:description" content="Lucas - Portfolio" />
     <meta property="og:site_name" content="Lucas - Portfolio" />
     <meta id="tw_url" name="twitter:url" content="">
+    <meta name="viewport" content="width=1024">
     <!-- main style -->
     <link href="css/main.css" rel="stylesheet">
     <!-- responsive style -->
@@ -44,7 +45,8 @@
                         <ul class="navpage__wrap">
                             <li class="navpage__list clickableItem"><a href="#sectionhero" class="activelink">Intro</a></li>
                             <li class="navpage__list clickableItem"><a href="#aboutsection">About Me</a></li>
-                            <li class="navpage__list clickableItem"><a href="#Projectssection">Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="#Projectssection">Game Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="#Musicsection">Music Projects</a></li>
                             <li class="navpage__list clickableItem"><a href="#contactsection">Contact</a></li>
                         </ul>
                     </nav>
@@ -52,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <img src="asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px;">
+        <img src="asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px;" draggable="false">
     </header>
     <!-- end header -->
     <!-- PRELOADER -->
@@ -67,8 +69,9 @@
         <div class="overlay__navigation">
             <ul class="overlay__listnav">
                 <li class="navpage__list"><a href="#herosection">Intro</a></li>
-                <li><a href="#Projectssection">Projects</a></li>
                 <li><a href="#aboutsection">About Me</a></li>
+                <li><a href="#Projectssection">Game Projects</a></li>
+                <li><a href="#Musicsection">Music Projects</a></li>
                 <li><a href="#contactsection">Contact</a></li>
             </ul>
         </div>
@@ -100,7 +103,7 @@
             <iframe scrolling="no" src="https://www.youtube.com/embed/J5_nePYKsTs?controls=0&autoplay=1&mute=1&playsinline=1&loop=1&playlist=J5_nePYKsTs"></iframe>
         </div> -->
         <div class="pinkTransition">
-            <img src="asset/background transition.png" class="barHeader" style="filter: invert(0);">
+            <img src="asset/background transition.png" class="barHeader" style="filter: invert(0);" draggable="false">
         </div>
         
     </div>
@@ -298,15 +301,51 @@
     </div>
 
      <!-- contactSection -->
-    <div id="contactsection" class="sectionblock">
+     <div id="contactsection" class="sectionblock">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1"
                 d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
             </path>
         </svg>
-
+        <div class="container">
+            <div class="contactdetail">
+                <h3 class="contactdetail__title mb-4">
+                    Let's get in touch
+                </h3>
+                <p>You can contact me via social networks or by email!</p>
+                <ul class="contactdetail__list">
+                    <li>
+                        <span class="contactdetail__span">
+                            <a target="_blank" href="mailto:menardisaac@gmail.com"
+                                style="color: #181715;">lucas.lionnet151@gmail.com</a>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="contactdetail__sosmed">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/isaac-menard/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://store.steampowered.com/search/?developer=Isaac%20MENARD">
+                            <i class="fa-brands fa-steam"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://medium.com/@menardisaac">
+                            <i class="fa-brands fa-medium"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/isaacmenard">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 
     <!-- contactSection END -->
 

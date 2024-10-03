@@ -623,6 +623,11 @@ textarea {
 * ----------------------------------------------------------------------------------------
 */
 
+body{   /*pour désactiver le responsive */
+    width: 1024px;
+    overflow-x: scroll;
+}
+
 .backgroundSection{
     background-image: url("../asset/SVG/grid.jpg");
     background-size: 20%;
@@ -700,7 +705,7 @@ img.background{
     z-index: -2;
   }
 
-@media (min-aspect-ratio: 16/9) { /* Responsive */
+@media (min-aspect-ratio: 16/9) {  /* Responsive */
     .video-container iframe {
       height: 56.25vw;
       overflow: hidden;
