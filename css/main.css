@@ -652,6 +652,7 @@ img.background{
   html, body{
       width: 100%;
       height: 100%;
+      overflow-x: hidden;
   }
 
 .preloadBG{
@@ -677,6 +678,11 @@ img.background{
     padding: 105px;
     color: #f2f2f2;
 }
+
+.glightbox{
+    z-index: -1;
+}
+
 /* IFRAME
 .video-container{
     background-color: #f2f2f2;
@@ -715,18 +721,19 @@ img.background{
     pointer-events: none;   
 }*/
   
+
 .video-container {
     position: absolute;
     width: 100%;
     height: auto;
     overflow: hidden;
     top: 50%;
-    z-index: -1;
+    z-index: -2;
     top: 50%;
     left: 50%;
     width: 100vw;
     height: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     border: 0;
   }
   
@@ -735,19 +742,10 @@ img.background{
     height: auto;
   }
   
-  @media (max-width: 768px) {
-    .video-container {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
   
-    .video-container video {
-      width: 100%;
-      height: auto;
-      max-height: 300px;
-    }
-  }
+/*####################################################
+##### REGLES CSS DE LA VIDEO DANS RESPONSIVE.CSS #####
+#####################################################*/
 
 /*
 @media (min-aspect-ratio: 16/9) { 
@@ -783,6 +781,9 @@ img.background{
     filter: invert(1);
 }
 
+.topbarHeader{
+    transform: translateY(8%);
+}
 img,
 iframe{
     max-width: 100%;
