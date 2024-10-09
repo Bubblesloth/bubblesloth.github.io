@@ -600,7 +600,7 @@ textarea {
 }
 
 .contactdetail__sosmed li a {
-    color: #080808;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -884,6 +884,27 @@ iframe{
 
 .linkbtn:hover{
     transform: scale(1.1);
+}
+
+#contactsection{
+    background-color: #221822;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footertransition{
+    z-index: -1;
+    padding-top:50px;
+}
+
+#projectText {
+    font-size: 30px;
+    margin-bottom: -30px;
 }
 /*---------- CURSEUR -----------*/
 
