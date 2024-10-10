@@ -254,6 +254,8 @@ var selectSound = document.getElementById('selectSound');
 
 var selectSoundClass = document.querySelectorAll('.clickableItem');
 
+selectSound.volume = 0.2;
+
 selectSoundClass.forEach(function(link) {
     link.addEventListener('mouseenter', function() {
         selectSound.play();
@@ -268,6 +270,9 @@ document.addEventListener('mousedown', function(event) {
         
         var clickSound = document.getElementById('clickSound');
         var newClickSound = clickSound.cloneNode();
+
+        // Set the volume to a lower level (e.g., 0.5 for 50% volume)
+        newClickSound.volume = 0.2;
 
         newClickSound.play();
 
