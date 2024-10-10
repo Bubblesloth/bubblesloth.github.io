@@ -906,6 +906,11 @@ iframe{
     font-size: 30px;
     margin-bottom: -30px;
 }
+
+#Musicsection{
+    height: auto;
+}
+
 /*---------- CURSEUR -----------*/
 
 body {
