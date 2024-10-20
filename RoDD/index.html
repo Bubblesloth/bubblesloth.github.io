@@ -39,11 +39,11 @@
                     <!-- navigation desktop -->
                     <nav class="navpage text-left">
                         <ul class="navpage__wrap">
-                            <li class="navpage__list clickableItem"><a href="#sectionhero" class="activelink">Intro</a></li>
-                            <li class="navpage__list clickableItem"><a href="#aboutsection">About Me</a></li>
-                            <li class="navpage__list clickableItem"><a href="#Projectssection">Game Projects</a></li>
-                            <li class="navpage__list clickableItem"><a href="#Musicsection">Music Projects</a></li>
-                            <li class="navpage__list clickableItem"><a href="#contactsection">Contact</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#sectionhero" class="activelink">Intro</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#aboutsection">About Me</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#Projectssection">Game Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#Musicsection">Music Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#contactsection">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- end navigation desktop -->
@@ -53,17 +53,168 @@
         <img src="../asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px;" draggable="false">
     </header>
 
-    
+
+    <main>
+        <div id="stars">
+        <div id="Projectssection" class="sectionblock">
+            <div class="container ">
+                <div class="abouthero titrepage2nd">
+                    <h3 style="white-space: nowrap;text-align: left;">Road of the Driver Dancer</h3>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-8 text-center text-lg-left">
+                        <iframe width='714' height='401' scrolling="no" src="https://www.youtube.com/embed/J5_nePYKsTs?controls=0&autoplay=0&mute=1&playsinline=1&loop=1&playlist=J5_nePYKsTs"></iframe>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-left">
+                        <div class="abouthero">
+                            <p class="paragraph"><strong>Road of the Driver Dancer </strong>is a game I developed in <strong>Two Weeks</strong> during the <strong>Summer School</strong> at <strong>Isart Digital</strong>.
+                                <br>
+                                <br>
+                                It's a <strong>rhythm game</strong> with a <strong>synthwave</strong> atmosphere, inspired by <strong>Crypt of the Necrodancer</strong>, where you must dodge oncoming traffic while driving your car against the flow.
+                                <br>
+                                <br>
+                                Move from lane to lane to the <strong>beat</strong> of the music to score as many points as possible.
+                                <br>
+                                <br>
+                            <a target="_blank" href="https://bubblesloth.itch.io/road-of-the-driverdancer"
+                                class="btn linkbtn aboutlink aboutlinkLogo clickableItem">
+                                Try here
+                            </a>
+                            <img class="imageiconlittle" draggable="false"
+                                src="https://cdn-icons-png.flaticon.com/512/5969/5969205.png" />
+                            <img class="imageiconlittle" draggable="false"
+                                src="https://pic.onlinewebfonts.com/thumbnails/icons_433316.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <div class="abouthero">
+                    <section>
+                        <h3>How was it made?</h3>
+                        <br>
+                        <p><strong>Road of the Driver Dancer</strong> was developed in just <strong>two weeks</strong> during an internship, where I learned to use <strong>Unity</strong> from scratch, having no prior experience with the engine at the beginning of the program.</p>
+                    
+                        <p>By the third day, I had to come up with a game idea that would be my project for the remainder of the internship. I’ve always been a big fan of rhythm games, and <strong>Crypt of the Necrodancer</strong> in particular. Drawing inspiration from things I love, I also looked to <strong>Hotline Miami</strong> for its synthwave aesthetic.</p>
+                        
+                        <div class="media">
+                        
+                          <img style="width:60%; height:auto; clip-path: inset(0 4px 0 4px);" src="./assets/hotlinemiami.gif" alt="Hotline Miami GIF" draggable="false">
+
+                        </div>
+                        <br>
+                        <p>When working with such a tight deadline, the most important thing is to come up with a simple concept to ensure you can finish it in time. Proper time management is key, and in my case, I used <strong>Trello</strong> to organize and prioritize all the tasks that needed to be done.</p>
+                        <br>
+                        <p>The first challenge was to recreate a beat-based system similar to <strong>Crypt of the Necrodancer</strong>. In the game, both the player’s and the enemies’ movements are locked to the beat of the music, meaning every move must happen in <strong>sync</strong>s with the rhythm.</p>
+                        
+                        <div class="media mediaSide">
+
+                          <img src="./assets/COTND.gif" alt="Crypt of the Necrodancer GIF" draggable="false">
+
+                          <img src="./assets/ROTDD Beat gif.gif" alt="Road of the Driver Dancer GIF" draggable="false">
+
+                        </div>
+                        <br>
+                        <p>The goal was to implement as many elements tied to the beat as possible, making it easier for the player to stay in sync with the rhythm:</p>
+                        <ul>
+                            <li>The <strong>music</strong> helps with its drums, it has a kick per beat</li>
+                            <li>The visual symbol representing the beat <strong>bounce</strong> on each beat (a heart in <strong>Crypt of the Necrodancer</strong>, a synthwave sun here)</li>
+                            <li><strong>Beat Bars</strong> connect to the beat symbol on every pulse like in <strong>Crypt of the Necrodancer</strong></li>
+                            <li>The <strong>enemies' movement</strong> and their <strong>bonce</strong> are timed to the beat</li>
+                            <li>Then the <strong>motion</strong> of the background is based on the rhythm</li>
+                        </ul>
+                        <br>
+                        <p>Simultaneously, I had to focus on the <strong>music</strong>. Staying true to the game's atmosphere, I composed a <strong>Synthwave</strong> <strong>track</strong>. This was a significant challenge because I had to <strong>design</strong> the levels while composing the music. Car spawns are <strong>tied</strong> to the lead synth: a <strong>low</strong> <strong>note</strong> triggers a car on the <strong>left</strong>, while a <strong>high</strong> <strong>note</strong> triggers one on the <strong>right</strong>. Since enemies spawn on the beats, I couldn’t place off-beat notes in the lead. Moreover, I had to envision how the level would play out while composing, making sure not to <strong>overwhelm</strong> the player with too many consecutive notes.</p>
+                        
+                        <div class="media">
+
+                          <video src="..." controls></video>
+
+                        </div>
+                        <br>
+                        <p>To program the enemy spawns, I used an <strong>Unity</strong> tool called <a href="https://github.com/NorskaGames/NorskaLib.Spreadsheets" target="_blank">NorskaLib Spreadsheets</a>, which connects <strong>Google</strong> <strong>Sheets</strong> to <strong>Unity</strong>, allowing data to be imported in <strong>table</strong> <strong>format</strong>.</p>
+
+                        <div class="media">
+
+                          <img style='width: 50%;' src="./assets/googlesheet.JPG" alt="Spreadsheet example" draggable="false">
+
+                        </div>
+                        <br>
+                        <p>Each <strong>row</strong> in the spreadsheet represents the <strong>beats</strong>, while the<strong> columns</strong> represent the <strong>lanes</strong> where enemy cars appear. The "1"s indicate when and where an enemy spawns, according to the <strong>beat</strong> <strong>count</strong> and the <strong>lane</strong>.</p>
+                        <br>
+                        <p>One of my key goals was to make the game experience <strong>as smooth and non-frustrating as possible</strong>. To do this, I implemented a system similar to the <strong>"coyote time"</strong> mechanic (like in <strong>Celeste</strong>), where a jump is allowed even after the player steps off the ledge. In <strong>Road of the Driver Dancer</strong>, players are allowed to move even if they are slightly <strong>off-beat</strong> or come into <strong>contact</strong> with an enemy.</p>
+                        
+                        <div class="media mediaSide">
+
+                          <img style="clip-path: inset(2px 2px 0 2px);" src="./assets/celeste.gif" alt="Celeste GIF" draggable="false">
+
+                          <img style="clip-path: inset(2px 2px 0 2px);" src="./assets/ROTDD coyote time.gif" alt="Road of the Driver Dancer GIF" draggable="false">
+                        </div>
+                        <br>
+                        <br>
+                        <p>There are plenty of other aspects of the game that I could dive into, but I’ve focused here on the most <strong>interesting</strong> ones. I’ve <strong>learned</strong> a lot during the development process, and I plan to continue working on and <strong>improving</strong> the game in the future.</p>
+                      </section>
+                      
+                </div>
+
+                <br>
+                <br>
+                <div class="abouthero">
+                    <h3 style="white-space: nowrap;text-align: left; font-size: 30px;">What's next ?</h3>
+                    <br>
+                    <ul>
+                        <li>I’m planning to add <strong>new</strong> <strong>levels</strong> with different <strong>tracks</strong>.</li>
+                        <br>
+                        <li>I’ll be adapting the game for <strong>mobile</strong>, turning it into a <strong>mobile</strong> <strong>rhythm</strong> <strong>game</strong>. If it turns out well, I might even publish it on the <strong>Play</strong> <strong>Store</strong>.</li>
+                        <br>
+                        <li>I’ll focus on <strong>polishing</strong> the game, <strong>refining</strong> and <strong>completing</strong> various aspects to improve the overall experience.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <br>
+                <br>
+                <div class="abouthero">
+                    <h3 style="white-space: nowrap;text-align: left; font-size: 30px;">Screenshots</h3>
+
+                    <!-- Screens -->
+                     
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="./assets/Road of the DriverDancer screen 1.png"
+                                class="w-100 shadow-1-strong rounded mb-4 imgGallery" />
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="./assets/Road of the DriverDancer screen 2.png"
+                                class="w-100 shadow-1-strong rounded mb-4 imgGallery" />
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="./assets/Road of the DriverDancer screen 3.png"
+                                class="w-100 shadow-1-strong rounded mb-4 imgGallery" />
+                        </div>
+
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                        <!-- Gallery -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
      <!-- contactSection -->
      <img src="../asset/wavegood.png" class="footertransition" style="filter: invert(0);" draggable="false">
      <div id="contactsection" class="sectionblock">
-        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>-->
         <div class="container">
             <div class="contactdetail">
                 <h3 class="contactdetail__title mb-4">
@@ -73,31 +224,31 @@
                 <ul class="contactdetail__list">
                     <li>
                         <span class="contactdetail__span">
-                            <a target="_blank" href="mailto:lucas.lionnet151@gmail.com"
-                                style="color: #ffffff;">lucas.lionnet151@gmail.com</a>
+                            <a class='clickableItem'target="_blank" href="mailto:lucas.lionnet151@gmail.com"
+                                style="color: #000000;">lucas.lionnet151@gmail.com</a>
                         </span>
                     </li>
                 </ul>
                 <ul class="contactdetail__sosmed">
                     <li>
                         <a target="_blank" href="https://bubblesloth.itch.io">
-                            <i class="fa-brands fa-itch-io"></i>
+                            <i class="fa-brands fa-itch-io bouncableItem clickableItem"></i>
                         </a>
 
                     </li>
                     <li>
                         <a target="_blank" href="https://www.youtube.com/@bubblesloth1">
-                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube bouncableItem clickableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://github.com/Bubblesloth">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github bouncableItem clickableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://soundcloud.com/bubblesloth">
-                            <i class="fa-brands fa-soundcloud"></i>
+                            <i class="fa-brands fa-soundcloud bouncableItem clickableItem"></i>
                         </a>
                     </li>
                 </ul>
@@ -106,6 +257,9 @@
     </div>
 
     <!-- contactSection END -->
+
+</main>
+
 
     <!-- footer -->
 
@@ -121,6 +275,17 @@
 
     <!-- footer END -->
 
+    <!-- SFX Loader -->
+
+    <audio id="backSound" src="../asset/SFX/back.mp3" preload="auto"></audio>
+    <audio id="clickSound" src="../asset/SFX/click.mp3" preload="auto"></audio>
+    <audio id="enterHomeSecretLightmodSound" src="../asset/SFX/enterHomeSecretLightmod.mp3" preload="auto"></audio>
+    <audio id="headerscrollSound" src="../asset/SFX/headerscroll.mp3" preload="auto"></audio>
+    <audio id="pageExitSound" src="../asset/SFX/pageExit.mp3" preload="auto"></audio>
+    <audio id="selectSound" src="../asset/SFX/select.mp3" preload="auto"></audio>
+
+    <!-- Background stars -->
+    <script src="../javascript/stars.js"></script>
     <!-- keen slider -->
     <script src="../javascript/vendor/keen-slider.js"></script>
     <!-- glightbox -->

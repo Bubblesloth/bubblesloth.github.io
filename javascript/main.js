@@ -73,27 +73,38 @@ const freemaninit = (function() {
         });
         GLightbox();
     };
-    const scrolspy = function(e) {
-        // for clickable event
-        menuSection.forEach(v => {
-            v.onclick = (() => {
-                setTimeout(() => {
-                    menuSection.forEach(j => j.classList.remove('activelink'));
-                    v.classList.add('activelink');
-                }, 300)
+
+        const scrolspy = function() {
+            // click envent
+            menuSection.forEach(v => {
+                v.addEventListener('click', function() {
+                    setTimeout(() => {
+                        menuSection.forEach(j => j.classList.remove('activelink'));
+                        v.classList.add('activelink');
+                    }, 300);
+                });
             });
-        });
-        // for window scroll spy event
-        window.onscroll = (() => {
-            mainSection.forEach((v, i) => {
-                let rect = v.getBoundingClientRect().y
-                if (rect < window.innerHeight - 100) {
-                    menuSection.forEach(v => v.classList.remove('activelink'));
-                    menuSection[i].classList.add('activelink');
-                }
+    
+            // scroll event
+            window.addEventListener('scroll', function() {
+                let current = '';
+                mainSection.forEach((v, i) => {
+                    let rect = v.getBoundingClientRect().top;
+                    if (rect < window.innerHeight / 2 && rect >= -window.innerHeight / 2) {
+                        current = v.id;
+                    }
+                });
+
+                menuSection.forEach(link => {
+                    link.classList.remove('activelink');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('activelink');
+                    }
+                });
             });
-        });
-    };
+        };
+    
+        scrolspy(); // Init
     //animated typed init ------------------------
     const erase = function(e) {
         if (charIndex > 0) {

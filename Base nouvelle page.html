@@ -39,11 +39,11 @@
                     <!-- navigation desktop -->
                     <nav class="navpage text-left">
                         <ul class="navpage__wrap">
-                            <li class="navpage__list clickableItem"><a href="#sectionhero" class="activelink">Intro</a></li>
-                            <li class="navpage__list clickableItem"><a href="#aboutsection">About Me</a></li>
-                            <li class="navpage__list clickableItem"><a href="#Projectssection">Game Projects</a></li>
-                            <li class="navpage__list clickableItem"><a href="#Musicsection">Music Projects</a></li>
-                            <li class="navpage__list clickableItem"><a href="#contactsection">Contact</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#sectionhero" class="activelink">Intro</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#aboutsection">About Me</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#Projectssection">Game Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#Musicsection">Music Projects</a></li>
+                            <li class="navpage__list clickableItem"><a href="../index.html#contactsection">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- end navigation desktop -->
@@ -53,17 +53,20 @@
         <img src="../asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px;" draggable="false">
     </header>
 
+    <main>
+        <div id="stars">
+
+
+
+
+
+
+
+        </div>
     
-
-
      <!-- contactSection -->
      <img src="../asset/wavegood.png" class="footertransition" style="filter: invert(0);" draggable="false">
      <div id="contactsection" class="sectionblock">
-        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>-->
         <div class="container">
             <div class="contactdetail">
                 <h3 class="contactdetail__title mb-4">
@@ -73,7 +76,7 @@
                 <ul class="contactdetail__list">
                     <li>
                         <span class="contactdetail__span">
-                            <a target="_blank" href="mailto:lucas.lionnet151@gmail.com"
+                            <a class='clickableItem' target="_blank" href="mailto:lucas.lionnet151@gmail.com"
                                 style="color: #ffffff;">lucas.lionnet151@gmail.com</a>
                         </span>
                     </li>
@@ -81,30 +84,30 @@
                 <ul class="contactdetail__sosmed">
                     <li>
                         <a target="_blank" href="https://bubblesloth.itch.io">
-                            <i class="fa-brands fa-itch-io"></i>
+                            <i class="fa-brands fa-itch-io bouncableItem clickableItem"></i>
                         </a>
 
                     </li>
                     <li>
                         <a target="_blank" href="https://www.youtube.com/@bubblesloth1">
-                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube bouncableItem clickableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://github.com/Bubblesloth">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github bouncableItem clickableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://soundcloud.com/bubblesloth">
-                            <i class="fa-brands fa-soundcloud"></i>
+                            <i class="fa-brands fa-soundcloud bouncableItem clickableItem"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
+    </main>
     <!-- contactSection END -->
 
     <!-- footer -->
@@ -121,6 +124,17 @@
 
     <!-- footer END -->
 
+  <!-- SFX Loader -->
+
+  <audio id="backSound" src="../asset/SFX/back.mp3" preload="auto"></audio>
+  <audio id="clickSound" src="../asset/SFX/click.mp3" preload="auto"></audio>
+  <audio id="enterHomeSecretLightmodSound" src="../asset/SFX/enterHomeSecretLightmod.mp3" preload="auto"></audio>
+  <audio id="headerscrollSound" src="../asset/SFX/headerscroll.mp3" preload="auto"></audio>
+  <audio id="pageExitSound" src="../asset/SFX/pageExit.mp3" preload="auto"></audio>
+  <audio id="selectSound" src="../asset/SFX/select.mp3" preload="auto"></audio>
+
+    <!-- Background stars -->
+    <script src="../javascript/stars.js"></script>
     <!-- keen slider -->
     <script src="../javascript/vendor/keen-slider.js"></script>
     <!-- glightbox -->

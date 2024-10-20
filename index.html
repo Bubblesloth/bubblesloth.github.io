@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <img src="asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px;" draggable="false">
+        <img src="asset/background transition.png" class="topbarHeader" style="margin-bottom: -40px; z-index: 1;" draggable="false">
     </header>
     <!-- end header -->
     <!-- PRELOADER -->
@@ -79,7 +79,7 @@
 
     <br>
     <br>
-    <div id="sectionhero" class="sectionblock">
+    <section id="sectionhero" class="sectionblock">
         <div class="container" style="padding-bottom: 5vw">
             <div class="row h-100 d-flex align-items-center justify-content-center">
                 <div id="rowFirstSection" class="glightbox align-items-center justify-content-center align-items-lg-center justify-content-lg-center text-center text-lg-center d-flex order-1 order-lg-0 ">
@@ -107,10 +107,11 @@
             <img src="asset/background transition.png" class="barHeader" style="filter: invert(0);" draggable="false">
         </div>
         
-    </div>
+    </section>
     <main>
+        <div id="stars">
         <!-- about section -->
-        <div id="aboutsection" class="sectionblock">
+        <section id="aboutsection" class="sectionblock">
             <br>
             <br>
             <div class="container">
@@ -144,8 +145,8 @@
                                             <div class="infoabout__wrap">
                                                 <span class="mt-4 mb-2 d-block infoabout__title">EMAIL ADDRESS</span>
                                                 <p>
-                                                    <a target="_blank" href="mailto:lucas.lionnet151@gmail.com"
-                                                        style="color: #181715;">lucas.lionnet151@gmail.com</a>
+                                                    <a target="_blank" href="mailto:lucas.lionnet151@gmail.com" class="clickableItem bouncableItem"
+                                                        style="color: #ffffff;">lucas.lionnet151@gmail.com</a>
                                                 </p>
                                             </div>
                                         </li>
@@ -204,11 +205,11 @@
                 </div>
             </div>
             
-         </div>
+         </section>
 
     <!-- portfolio -->
 
-    <div id = "Projectssection" class = "sectionblock">
+    <section id = "Projectssection" class = "sectionblock">
         <div class="container">
             <div class="abouthero" style="padding-top: 30px;">
                 <h3 style="white-space: nowrap;text-align: left;" id="projectTxt">Game Projects - 2022/2024</h3>
@@ -221,7 +222,7 @@
                     <h3 class="mt-3 wrapservice__title"> Road of the DriverDancer | Rhythm game.</h3>
                     <br>
                     <a href="./RoDD/index.html">
-                        <img class="gameCoverImage clickableItem" src="asset/RoDD Cover.png" />
+                        <img class="bouncableItem clickableItem" src="asset/RoDD Cover.png" draggable="false"/>
                     </a>
                     <p class="paragraph"><strong>Road of The Driver Dancer </strong>is a <strong>rhythm game </strong>were you have to dodge the traffic in a <strong>Synthwave athmosphere</strong>.</p>
                     <p><i>My roles:</i>
@@ -261,7 +262,7 @@
                     <h3 class="mt-3 wrapservice__title"> Chees'cale | GMTK Game Jam 2024.</h3>
                     <br>
                     <a href="./Cheescale/index.html">
-                        <img class="gameCoverImage clickableItem" src="asset/GMTK2024 cover.jpg" />
+                        <img class="d clickableItem" src="asset/GMTK2024 cover.jpg" draggable="false"/>
                     </a>
                     <p class="paragraph"><strong>Chees'cale </strong>is a game </strong>made for the <strong>GMTK Game Jam 2024 </strong>. This is my first jam game and <strong>team game</strong> in a team of 4 people using <strong>Github</strong>.<br>In <strong>Chees'Cale</strong>, scale the giant wall of cheese as a mouse to escape the big bad orange cat ! Dodge obstacles and climb as quickly as possible to the top of the wall !</p>
                     <p><i>My roles:</i>
@@ -301,7 +302,7 @@
                     <h3 class="mt-3 wrapservice__title"> Super Pong (Visuel provisoire).</h3>
                     <br>
                     <a href="./RoDD/index.html">
-                        <img class="gameCoverImage clickableItem" src="asset/SuperPong Cover.png" />
+                        <img class="bouncableItem clickableItem" src="asset/SuperPong Cover.png" draggable="false"/>
                     </a>
                     <p class="paragraph"><strong>Super Pong </strong>is a <strong>Pong remake </strong>with a new physics and some <strong>New Gamemodes</strong>.</p>
                     <p><i>My roles:</i>
@@ -316,7 +317,7 @@
                     <p><i>Duration:</i><br>
                         <ul>
                             <li>longtemps</li>
-                            <li>September 2022 - Unreleased</li>
+                            <li>September 2022 - Unfinished (playable beta)</li>
                         </ul>
                     </p>
                     <a href="./RoDD/index.html" class="btn linkbtn aboutlink aboutlinkLogo clickableItem">
@@ -340,9 +341,9 @@
                     <h3 class="mt-3 wrapservice__title"> Once Upon a Hat (visuel provisoire).</h3>
                     <br>
                     <a href="./RoDD/index.html">
-                        <img class="gameCoverImage clickableItem" src="asset/OUAH Cover.png" />
+                        <img class="bouncableItem clickableItem" src="asset/OUAH Cover.png" draggable="false"/>
                     </a>
-                    <p class="paragraph"><strong>Once Upon a Hat </strong>is a <strong>hyper casual game </strong>where you have to save a village from an <strong>evil fairy</strong>.</p>
+                    <p class="paragraph"><strong>Once Upon a Hat </strong>is a <strong>hyper casual game </strong>where you have to save a village from an <strong>evil fairy</strong>. This was my <strong>first G&amemaker project</strong>.</p>
                     <p><i>My roles:</i>
                         <ul>
                             <li>Game programmer</li>
@@ -355,7 +356,7 @@
                     <p><i>Duration:</i><br>
                         <ul>
                             <li>longtemps</li>
-                            <li>?? 2022 - ??</li>
+                            <li>Project cancelled for now</li>
                         </ul>
                     </p>
                     <a href="./RoDD/index.html" class="btn linkbtn aboutlink aboutlinkLogo clickableItem">
@@ -375,7 +376,7 @@
         </div>
     </div>
     
-    <div id = "Musicsection" class = "sectionblock">
+    <section id = "Musicsection" class = "sectionblock">
         <div class="container">
             <div class="abouthero" style="padding-top: 30px;">
                 <h3 style="white-space: nowrap;text-align: left; font-family: 'Courier New', Courier, monospace;" id="projectText">_____________________________________</h3><br><br>
@@ -388,8 +389,8 @@
                 <div class="text-left text-lg-left col-lg-6 clickableItem" style="margin-top: 60px;">
                     <h3 class="mt-3 wrapservice__title">Stellar Black Howl.</h3>
                     <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lmFd8zHZzps?si=XJQfqAl_Hbx6XpNY" title="Stellar Black Howl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="paragraph"><strong>Stellar Black Howl </strong>is an <strong>electro music with some elements of house </strong>that I composed and mixed on <strong>FL Studio</strong>.</p>
+                    <iframe class="bouncableItem musicvideo" width="560" height="315" src="https://www.youtube.com/embed/lmFd8zHZzps?si=XJQfqAl_Hbx6XpNY" title="Stellar Black Howl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="paragraph"><strong>Stellar Black Howl </strong>is an <strong>electro music with some elements of house </strong>that I composed and mixed on <strong>FL Studio</strong>. This track currently represents my skill level the best.</p>
                     <p>Released on July 2024</p>
                 </div>
 
@@ -398,7 +399,7 @@
                 <div class="text-left text-lg-left col-lg-6 clickableItem" style="margin-top: 60px;">
                     <h3 class="mt-3 wrapservice__title">Memoriam Church.</h3>
                     <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JIKtz1nP7aE?si=zc144x1W6XwZklq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="bouncableItem musicvideo" width="560" height="315" src="https://www.youtube.com/embed/JIKtz1nP7aE?si=zc144x1W6XwZklq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="paragraph"><strong>Memoriam Church </strong>is a <strong>rap beat </strong>that I produced and mixed on <strong>FL Studio</strong>.</p>
                     <p>Released on October 2023</p>
                 </div>
@@ -408,17 +409,17 @@
                 <div class="text-left text-lg-left col-lg-6 clickableItem" style="margin-top: 60px;">
                     <h3 class="mt-3 wrapservice__title">Help Needed.</h3>
                     <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/abmdGBgReIU?si=UxDZc98A9HgniG6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="bouncableItem musicvideo" width="560" height="315" src="https://www.youtube.com/embed/abmdGBgReIU?si=UxDZc98A9HgniG6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="paragraph"><strong>Help Needed </strong>is an <strong>electro music </strong>that I composed and mixed on <strong>FL Studio</strong> I experimented with using my voice and a <strong>unique mix </strong> to create a strange and deep atmosphere in my music.</p>
                     <p>Released on November 2023</p>
                 </div>
 
-                 <!-- Help Needed -->
+                 <!-- Bouncy Bullets (Super Pong OST) -->
 
                  <div class="text-left text-lg-left col-lg-6 clickableItem" style="margin-top: 60px;">
                     <h3 class="mt-3 wrapservice__title">Bouncy Bullets (Super Pong OST).</h3>
                     <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3pqIC8eQ8JY?si=Qw_QbWQv-nViQik-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="bouncableItem musicvideo" width="560" height="315" src="https://www.youtube.com/embed/3pqIC8eQ8JY?si=Qw_QbWQv-nViQik-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="paragraph"><strong>Bouncy Bullets </strong>is an <strong>electro music </strong>that I produced and mixed on <strong>FL Studio</strong> I created this track as the soundtrack for my game, <strong>Super Pong</strong>.</p>
                     <p>Released on August 2023</p>
                 </div>
@@ -426,16 +427,11 @@
             </div>
 
         </div>
-    </div>
-    
+    </section>
+        </div> <!-- stars end -->
      <!-- contactSection -->
       <img src="asset/wavegood.png" class="footertransition" style="filter: invert(0);" draggable="false">
-     <div id="contactsection" class="sectionblock">
-        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>-->
+     <section id="contactsection" class="sectionblock">
         <div class="container">
             <div class="contactdetail">
                 <h3 class="contactdetail__title mb-4">
@@ -445,37 +441,37 @@
                 <ul class="contactdetail__list">
                     <li>
                         <span class="contactdetail__span">
-                            <a target="_blank" href="mailto:lucas.lionnet151@gmail.com"
-                                style="color: #ffffff;">lucas.lionnet151@gmail.com</a>
+                            <a class='clickableItem'target="_blank" href="mailto:lucas.lionnet151@gmail.com"
+                                style="color: #000000;">lucas.lionnet151@gmail.com</a>
                         </span>
                     </li>
                 </ul>
                 <ul class="contactdetail__sosmed">
                     <li>
                         <a target="_blank" href="https://bubblesloth.itch.io">
-                            <i class="fa-brands fa-itch-io"></i>
+                            <i class="fa-brands fa-itch-io clickableItem bouncableItem"></i>
                         </a>
 
                     </li>
                     <li>
                         <a target="_blank" href="https://www.youtube.com/@bubblesloth1">
-                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube clickableItem bouncableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://github.com/Bubblesloth">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github clickableItem bouncableItem"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://soundcloud.com/bubblesloth">
-                            <i class="fa-brands fa-soundcloud"></i>
+                            <i class="fa-brands fa-soundcloud clickableItem bouncableItem"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- contactSection END -->
 
@@ -483,7 +479,7 @@
 
     <!-- footer -->
 
-    <footer id="footerwrap" class="pt-4">
+    <footer style='background-color: #221822; color:white;' id="footerwrap" class="pt-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center footwrap">
@@ -506,6 +502,8 @@
 
     <!-- JS Scripts -->
 
+    <!-- Background stars -->
+    <script src="./javascript/stars.js"></script>
     <!-- keen slider -->
     <script src="./javascript/vendor/keen-slider.js"></script>
     <!-- glightbox -->
