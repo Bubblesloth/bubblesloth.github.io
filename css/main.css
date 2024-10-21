@@ -782,10 +782,12 @@ img.background{
 .barHeader{
     transform: translateY(50%);
     filter: invert(1);
+    user-select: none;
 }
 
 .topbarHeader{
     transform: translateY(8%);
+    user-select: none;
 }
 img,
 iframe{
@@ -912,6 +914,7 @@ iframe{
     z-index: -1;
     padding-top:50px;
     transform: translateY(3px);
+    user-select: none;
 }
 
 #projectText {
@@ -970,6 +973,10 @@ iframe{
 
 .imgGallery:hover {
     opacity: 0.7;
+}
+
+#mainwrap{
+    margin-top: 120px;
 }
 
 
