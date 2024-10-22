@@ -953,10 +953,15 @@ iframe{
     flex-wrap: nowrap;
 }
 
+.media iframe{
+    border-radius: 15px;
+    z-index: 2;
+}
+
 .mediaSide img {
     max-width: 48%; 
     height: auto; 
-    margin-right: 2%; 
+    margin-right: 2%;
   }
   
 .mediaSide img:last-child {
