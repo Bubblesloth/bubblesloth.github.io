@@ -25,7 +25,7 @@ Filename      : responsive.css
 
 @media screen and (max-width: 1500px) {
     .pinkTransition{
-        z-index: 5;
+        
         margin-top: -100px;
         transform: translateY(5%);
     }
@@ -33,7 +33,7 @@ Filename      : responsive.css
 
 @media screen and (max-width: 1440px) {
     .pinkTransition{
-        z-index: 5;
+        
         margin-top: -100px;
         transform: translateY(5%);
     }
@@ -61,7 +61,7 @@ Filename      : responsive.css
       }
 
     .pinkTransition{
-        z-index: 5;
+        
         margin-top: -100px;
         transform: translateY(8%);
     }
@@ -90,7 +90,7 @@ Filename      : responsive.css
         height: auto;
       }
     .pinkTransition{
-        z-index: 5;
+        
         margin-top: -100px;
         transform: translateY(12%);
     }
@@ -120,7 +120,7 @@ Filename      : responsive.css
         height: auto;
       }
     .pinkTransition{
-        z-index: 5;
+       
         margin-top: -200px;
         transform: translateY(15%);
     }
@@ -233,7 +233,7 @@ Filename      : responsive.css
         height: auto;
     }
     .pinkTransition{
-        z-index: 5;
+        
         margin-top: -300px;
         transform: translateY(18%);
     }
